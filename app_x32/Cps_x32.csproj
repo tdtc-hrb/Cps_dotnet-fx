@@ -144,6 +144,9 @@
     <Compile Include="Models\WeightStation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ArriveStationBox.resx">
+      <DependentUpon>ArriveStationBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDispatch.resx">
       <DependentUpon>FrmDispatch.cs</DependentUpon>
     </EmbeddedResource>
