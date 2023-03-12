@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Cps_x32
 {
@@ -37,5 +38,37 @@ namespace Cps_x32
             // ASCII encoding replaces non-ascii with question marks, so we use UTF8 to see if multi-byte sequences are there
             return Encoding.UTF8.GetByteCount(value) == value.Length;
         }
+
+        /// <summary>
+        /// Get the value of the specified node and attribute in XML.
+        /// </summary>
+        /// <param name="xmlFile"></param>
+        /// <param name="nodeName"></param>
+        /// <param name="attr">Attribute</param>
+        /// <returns></returns>
+        public string getXmlValue(string xmlFile, string nodeName, string attr = "default")
+        {
+            string result = "";
+
+            string attrVal = "";
+
+            XmlReader xReader = XmlReader.Create(xmlFile);
+
+            //xReader.ReadToFollowing(nodeName);
+            xReader.ReadToDescendant(nodeName);
+
+            attrVal = xReader.GetAttribute("priority");
+
+            while (attrVal != attr) {
+                xReader.ReadToNextSibling(nodeName);
+                attrVal = xReader.GetAttribute("priority");
+            }
+
+            xReader.Read();
+            result = xReader.Value;
+
+            return result;
+        }
+
     }
 }
