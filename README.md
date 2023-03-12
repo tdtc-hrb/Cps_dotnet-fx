@@ -43,7 +43,7 @@ supported in EF core, but not in EF.
 
 ### Decimal precision and scale
 ```c#
-TypeName = "decimal(9, 3)")
+TypeName = "decimal(9, 3)"
 ```
 
 # Ref
