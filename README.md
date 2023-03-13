@@ -38,6 +38,14 @@ Put the following nuget packages into the Offline folder:
 8.0.32
 ```
 
+### [Restore](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-restore)
+down [nuget CLI](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe)
+```cmd
+nuget.exe config -set http_proxy=http://my.proxy.address:port
+nuget.exe config -set https_proxy=http://my.proxy.address:port
+nuget.exe restore C:\Users\tdtc\Documents\Cps_dotnet-fx\Cps_x32.sln
+```
+
 ## Unsupported features
 supported in EF core, but not in EF.
 
