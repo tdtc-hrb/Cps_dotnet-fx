@@ -33,7 +33,7 @@ namespace Cps_x32.Models
         {
             int i = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString", "bak");
+            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
             connection = new MySqlConnection(strConn);
             connection.Open();
 
