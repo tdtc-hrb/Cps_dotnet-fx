@@ -63,6 +63,30 @@ nuget.exe config -set https_proxy=http://my.proxy.address:port
 nuget.exe restore C:\Users\tdtc\Documents\Cps_dotnet-fx\Cps_x32.sln
 ```
 
+### source config
+> C:\Users\tdtc\AppData\Roaming\NuGet
+NuGet.Config:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <config>
+    <add key="http_proxy" value="http://192.168.3.19:8580" />
+    <add key="https_proxy" value="http://192.168.3.19:8580" />
+  </config>
+  <packageRestore>
+    <add key="enabled" value="True" />
+    <add key="automatic" value="True" />
+  </packageRestore>
+  <packageSources>
+    <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
+    <add key="NuGet V3" value="https://api.nuget.org/v3/index.json" />
+  </packageSources>
+  <activePackageSource>
+    <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
+  </activePackageSource>
+</configuration>
+```
+
 ## Unsupported features
 supported in EF core, but not in EF.
 
