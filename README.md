@@ -97,3 +97,4 @@ TypeName = "decimal(9, 3)"
 
 # Ref
 - [Entity Framework 6 Support](https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework60.html)
+- [Common NuGet configurations](https://learn.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
