@@ -1,10 +1,12 @@
 # Cps_dotnet-fx
 CPS dotnet framework
 
-- Dotnet framework [v4.5.2 Developer pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net452)
+- Dotnet framework    
+[v4.5.2 Developer pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net452)
 
 - IDE    
-[Visual Studio 2013 Update 5](http://download.microsoft.com/download/A/F/9/AF95E6F8-2E6E-49D0-A48A-8E918D7FD768/vs2013.5.iso)
+[Visual Studio 2013 Update 5](http://download.microsoft.com/download/A/F/9/AF95E6F8-2E6E-49D0-A48A-8E918D7FD768/vs2013.5.iso) ~ 
+[Visual Studio 2019 (v16.11)](https://aka.ms/vs/16/release/vs_Community.exe)
 
 ## NuGet
 > C:\Users\tdtc\AppData\Roaming\NuGet
