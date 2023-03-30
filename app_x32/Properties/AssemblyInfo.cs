@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Cps_x32")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Central Processing System for x86")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TDTC")]
 [assembly: AssemblyProduct("Cps_x32")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright ©  2022-2023 TDTC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

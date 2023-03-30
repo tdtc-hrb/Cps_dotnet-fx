@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WindowsFormsControlLib")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Printable List View")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("TDTC")]
 [assembly: AssemblyProduct("WindowsFormsControlLib")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright ©  2022-2023 TDTC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
