@@ -31,6 +31,7 @@ NuGet.Config:
   </activePackageSource>
 </configuration>
 ```
+at Visual Studio 2013
 
 ### New
 Update [NuGet.Tools.vsix](https://dist.nuget.org/visualstudio-2013-vsix/v2.12.0/NuGet.Tools.vsix)
