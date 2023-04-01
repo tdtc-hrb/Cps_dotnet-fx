@@ -41,10 +41,23 @@ and
 PM > [Net.ServicePointManager]::SecurityProtocol=[Net.ServicePointManager]::SecurityProtocol-bOR [Net.SecurityProtocolType]::Tls12
 ```
 Put the following nuget packages into the Offline folder:
-- portable.bouncycastle:1.9.0
-- google.protobuf:3.21.12
 - entityframework:6.4.4
+- google.protobuf:3.21.12    
+System.Memory:4.5.4
+- K4os.Compression.LZ4.Streams:1.2.6
+```
+K4os.Compression.LZ4:1.2.6
+K4os.Hash.xxHash:1.0.6
+```
 - mysql.data:8.0.32.1
+```
+portable.bouncycastle:1.9.0
+Google.Protobuf:3.21.12
+K4os.Compression.LZ4.Streams:1.2.6
+Portable.BouncyCastle:1.9.0
+System.Buffers:4.5.1
+System.Runtime.CompilerServices.Unsafe:5.0.0
+```
 - mysql.data.entityframework:8.0.32
 
 ### [Restore](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-restore)
