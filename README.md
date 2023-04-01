@@ -60,6 +60,11 @@ System.Runtime.CompilerServices.Unsafe:5.0.0
 ```
 - mysql.data.entityframework:8.0.32
 
+#### About dependency package update
+Every update of mysql.data will update google.protobuf.
+
+Other dependent package versions will not change.
+
 ### [Restore](https://learn.microsoft.com/en-us/nuget/reference/cli-reference/cli-ref-restore)
 down [nuget CLI](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe)
 ```cmd
