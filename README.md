@@ -48,7 +48,7 @@ nuget.exe restore C:\Users\tdtc\Documents\Cps_dotnet-fx\Cps_x32.sln
 ```
 
 ### [reinstalling and updating packages](https://learn.microsoft.com/en-us/nuget/consume-packages/reinstalling-and-updating-packages)
-Upgrading the dotnet frame version requires upgrading the PACK information.
+Upgrading the dotnet framework version requires upgrading the PACK information.
 ```
 PMC> Update-Package -reinstall
 ```
