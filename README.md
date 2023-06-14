@@ -13,6 +13,8 @@ CPS dotnet framework
 ## NuGet
 > C:\Users\tdtc\AppData\Roaming\NuGet
 
+When using vs2015 (current version 3.4.4), it is recommended to download the [latest NuGet Distribution Version](https://dist.nuget.org/visualstudio-2015-vsix/v3.6.0/NuGet.Tools.vsix).
+
 ### New
 Put the following nuget packages into the Offline folder:
 - google.protobuf:3.21.9
