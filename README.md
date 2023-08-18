@@ -22,26 +22,33 @@ Put the following nuget packages into the Offline folder:
 System.Memory:4.5.5
 System.Numerics.Vectors:4.5.0
 ```
+- ZstdSharp.Port
+```
+Microsoft.Bcl.Asynclnterfaces: 5.0.0
+```
 - K4os.Compression.LZ4.Streams:1.3.5
 ```
 K4os.Compression.LZ4:1.3.5
 K4os.Hash.xxHash:1.0.8
 System.IO.Pipelines:5.0.2
 ```
-- mysql.data:8.0.33
+- mysql.data:8.1.0
 ```
 portable.bouncycastle:1.9.0
 Google.Protobuf:3.21.9
 K4os.Compression.LZ4.Streams:1.3.5
 Portable.BouncyCastle:1.9.0
 System.Buffers:4.5.1
+System.configurationManager:4.4.1
+System.Diagnostics.DiagnosticSource: 7.0.2
 System.Runtime.CompilerServices.Unsafe:6.0.0
 System.Threading.Tasks.Extensions:4.5.4
+ZstdSharp.Port: 0.7.1
 ```
-- mysql.data.entityframework:8.0.33
+- mysql.data.entityframework:8.1.0
 ```
 entityframework:6.4.4
-mysql.data:8.0.33
+mysql.data:8.1.0
 ```
 
 #### About dependency package update
