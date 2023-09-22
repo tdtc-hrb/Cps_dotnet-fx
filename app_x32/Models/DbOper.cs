@@ -12,9 +12,18 @@ namespace Cps_x32.Models
     {
         MySqlConnection connection;
 
+        private string m_conn = "";
+
         private CommonFunc m_common = new CommonFunc();
 
-        public DbOperation() { }
+        public DbOperation() {
+            m_conn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
+        }
+
+        public DbOperation(string strConnAttr)
+        {
+            m_conn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString", strConnAttr);
+        }
 
         /// <summary>
         /// Get the data of the lotnumber table
@@ -33,8 +42,7 @@ namespace Cps_x32.Models
         {
             int i = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -76,8 +84,7 @@ namespace Cps_x32.Models
         {
             String strResult = "Info: ";
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -114,8 +121,7 @@ namespace Cps_x32.Models
                 separator = "-";
             }
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -159,8 +165,7 @@ namespace Cps_x32.Models
         /// <param name="bObsolete"></param>
         public void GetCarNums(TreeView treeView, int iLotNumId, bool bObsolete)
         {
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -192,8 +197,7 @@ namespace Cps_x32.Models
         {
             int i = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -226,8 +230,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -259,8 +262,7 @@ namespace Cps_x32.Models
         {
             var result = "";
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -301,8 +303,7 @@ namespace Cps_x32.Models
         {
             var result = "";
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -340,8 +341,7 @@ namespace Cps_x32.Models
         {
             int i = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -369,8 +369,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -394,8 +393,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -424,8 +422,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -455,8 +452,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
@@ -486,8 +482,7 @@ namespace Cps_x32.Models
         {
             int result = 0;
 
-            string strConn = m_common.getXmlValue("cpsConfig.xml", "ConnectionString");
-            connection = new MySqlConnection(strConn);
+            connection = new MySqlConnection(m_conn);
             connection.Open();
 
             using (var context = new PubsDbContext(connection, false))
