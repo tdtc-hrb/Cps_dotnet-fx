@@ -17,10 +17,10 @@ When using vs2015 (current version 3.4.4), it is recommended to download the [la
 
 ### New
 Put the following nuget packages into the Offline folder:
-- google.protobuf:3.21.9
+- google.protobuf:3.25.1
 ```
 System.Memory:4.5.5
-System.Numerics.Vectors:4.5.0
+System.Runtime.CompilerServices.Unsafe:4.5.2
 ```
 - ZstdSharp.Port
 ```
@@ -32,12 +32,11 @@ K4os.Compression.LZ4:1.3.5
 K4os.Hash.xxHash:1.0.8
 System.IO.Pipelines:5.0.2
 ```
-- mysql.data:8.1.0
+- mysql.data:8.3.0
 ```
-portable.bouncycastle:1.9.0
-Google.Protobuf:3.21.9
+BouncyCastle.Cryptography:2.2.1
+Google.Protobuf:3.25.1
 K4os.Compression.LZ4.Streams:1.3.5
-Portable.BouncyCastle:1.9.0
 System.Buffers:4.5.1
 System.configurationManager:4.4.1
 System.Diagnostics.DiagnosticSource: 7.0.2
@@ -45,10 +44,10 @@ System.Runtime.CompilerServices.Unsafe:6.0.0
 System.Threading.Tasks.Extensions:4.5.4
 ZstdSharp.Port: 0.7.1
 ```
-- mysql.data.entityframework:8.1.0
+- mysql.data.entityframework:8.3.0
 ```
 entityframework:6.4.4
-mysql.data:8.1.0
+mysql.data:8.3.0
 ```
 
 #### About dependency package update
