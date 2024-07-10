@@ -5,7 +5,6 @@ CPS dotnet framework
 [v4.6.2 Developer pack](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462)
 
 - IDE    
-[Visual Studio 2017 (v15.9)](https://aka.ms/vs/15/release/vs_Community.exe) / 
 [Visual Studio 2019 (v16.11)](https://aka.ms/vs/16/release/vs_Community.exe) / 
 [Visual Studio 2022 (v17.x)](https://aka.ms/vs/17/release/vs_Community.exe)
 
