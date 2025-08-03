@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TDTC")]
 [assembly: AssemblyProduct("Cps_x32")]
-[assembly: AssemblyCopyright("Copyright ©  2022-2023 TDTC")]
+[assembly: AssemblyCopyright("Copyright ©  2022-2025 TDTC")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.6.0")]
