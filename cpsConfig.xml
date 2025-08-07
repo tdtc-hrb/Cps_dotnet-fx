@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <ConnectionString priority = "default">
+      server=localhost;port=3306;database=pubs;uid=DBAdmin;password=xbfirst
+  </ConnectionString>
+  <ConnectionString priority = "bak">
+      server=192.168.3.6;port=3306;database=pubs;uid=DBAdmin;password=xbfirst
+  </ConnectionString>
+</Root>
