@@ -1,9 +1,9 @@
-# Cps_dotnet-fx
-CPS dotnet framework
-
+# CPS With dotnet framework
+**[In Entity Framework 6.5 the ef6 tool was updated to only support .NET 6 and newer.](https://learn.microsoft.com/en-us/ef/ef6/what-is-new)**
 ## project
 - Non-local connection DB:    
-First, add a [user - tdtc2022](https://www.cnblogs.com/xiaobin-hlj80/p/5189419.html);    
+First, add a [user - tdtc2022](https://www.cnblogs.com/xiaobin-hlj80/p/5189419.html);
+
 Then, modify cpsConfig.xml
 
 - Requires installation of [SHA-2](https://tdtc-hrb.github.io/ops-win/posts/sha2-install).
